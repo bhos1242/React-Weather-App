@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f7fc;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  height: 400px;
+  width: 300px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.box h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.inputData {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputField {
+  width: 80%;
+  height: 40px;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background-color: #e5f0fc;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+}
+
+.info {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.info h2 {
+  text-transform: capitalize;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.temp {
+  font-size: 56px;
+  font-weight: bold;
+  color: #1c6ef2;
+}
+
+.tempmin_max {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.location i {
+  margin-right: 8px;
+  font-size: 24px;
+  color: #333;
+}
+
+.error {
+  font-size: 16px;
+  color: #ff0000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Additional Styles for Modern Look */
+.box:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(to bottom right, #1c6ef2, #00b0f2);
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.inputField::placeholder {
+  color: #aaa;
+}
+
+.inputField:focus {
+  background-color: #d7e9fd;
+}
+
+.tempmin_max::before {
+  content: "Min: ";
+  font-weight: bold;
+}
+
+.tempmin_max::after {
+  content: " || Max: ";
+  font-weight: bold;
+}
+
